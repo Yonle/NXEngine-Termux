@@ -16,11 +16,11 @@ CXX           = g++
 DEFINES       = # -D_L10N_CP1251
 CFLAGS        = -pipe -O2 $(DEFINES)
 CXXFLAGS      = -pipe -O2 $(DEFINES)
-INCPATH       = -I/usr/include -I/usr/include/SDL -I/usr/local/include -I/usr/local/include/SDL -I.
+INCPATH       = -I$PREFIX/include -I$PREFIX/include/SDL -I$PREFIX/local/include -I$PREFIX/local/include/SDL -I.
 LINK          = g++
-LFLAGS        = -Wl,-O1 -Wl,-rpath,/usr/lib
+LFLAGS        = -Wl,-O1 -Wl,-rpath,$PREFIX/lib
 LIBS_SHARED   = -lSDL -lSDL_ttf
-LIBS_STATIC   = /usr/local/lib/libSDLmain.a /usr/local/lib/libSDL.a /usr/local/lib/libSDL_ttf.a -ldl -lpthread -lfreetype
+LIBS_STATIC   = $PREFIX/local/lib/libSDLmain.a $PREFIX/local/lib/libSDL.a $PREFIX/local/lib/libSDL_ttf.a -ldl -lpthread -lfreetype
 STRIP         = strip
 DEL_FILE      = rm -f
 
