@@ -1,3 +1,13 @@
+## NXEngine-Termux
+This NXEngine Fork includes a support for Termux Android Platform.
+
+### Building this
+To building this, You need `sdl` and `sdl-ttf` package installed. To build this package, Do:
+```bash
+make -f Makefile.linux
+```
+This will make `nx` Binary ELF file for your platform. You may need `Doukutsu.exe` for first-time launch, Or by downloading from [Releases](https://github.com/Yonle/NXEngine-Termux/releases) for Ready-to-play Binary with it's assets.
+
 NXEngine
 ========
 
